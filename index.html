@@ -8,16 +8,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>OpenHASP JSON Előnézet</h1>
+    <h1>OpenHASP JSON Preview</h1>
     <textarea id="jsonInput" rows="10" cols="50" placeholder="Másold be ide a JSON fájl tartalmát..."></textarea>
     <br><br>
-    <button onclick="renderPreview()">Előnézet frissítése</button>
+    <button onclick="renderPreview()">Preview refresh</button>
     <br><br>
-    <label for="pageSelect">Válassz oldalt:</label>
+    <label for="pageSelect">Select page:</label>
     <select id="pageSelect" onchange="onPageChange()">
     </select>
     <br><br>
-    <label for="frameSize">Válassz képkeret méretet:</label>
+    <label for="frameSize">select resolution:</label>
     <select id="frameSize" onchange="setFrameSize()">
         <option value="320x240">320x240</option>
         <option value="240x320">240x320</option>
@@ -38,10 +38,10 @@
     </div>
     <br><br>
     <div id="controls">
-        <button onclick="moveSelectedObjects(0, -10)">Fel</button>
-        <button onclick="moveSelectedObjects(0, 10)">Le</button>
-        <button onclick="moveSelectedObjects(-10, 0)">Balra</button>
-        <button onclick="moveSelectedObjects(10, 0)">Jobbra</button>
+        <button onclick="moveSelectedObjects(0, -10)">UP</button>
+        <button onclick="moveSelectedObjects(0, 10)">DOWN</button>
+        <button onclick="moveSelectedObjects(-10, 0)">LEFT</button>
+        <button onclick="moveSelectedObjects(10, 0)">RIGHT</button>
     </div>
 
     <script src="script.js"></script>
