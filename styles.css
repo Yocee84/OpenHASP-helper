@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#previewContainer {
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+.page {
+    margin-bottom: 20px;
+    padding: 10px;
+    position: relative;
+}
+
+.object {
+    box-sizing: border-box;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+#objectListContainer {
+    margin-top: 20px;
+}
+
+#controls {
+    margin-top: 10px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>OpenHASP JSON Előnézet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>OpenHASP JSON Előnézet</h1>
+    <textarea id="jsonInput" rows="10" cols="50" placeholder="Másold be ide a JSON fájl tartalmát..."></textarea>
+    <br><br>
+    <button onclick="renderPreview()">Előnézet frissítése</button>
+    <br><br>
+    <label for="pageSelect">Válassz oldalt:</label>
+    <select id="pageSelect" onchange="onPageChange()">
+    </select>
+    <br><br>
+    <label for="frameSize">Válassz képkeret méretet:</label>
+    <select id="frameSize" onchange="setFrameSize()">
+        <option value="320x240">320x240</option>
+        <option value="240x320">240x320</option>
+        <option value="320x480">320x480</option>
+        <option value="480x320">480x320</option>
+        <option value="480x480">480x480</option>
+        <option value="480x800">480x800</option>
+        <option value="800x480">800x480</option>
+    </select>
+    <br><br>
+    <div id="previewContainer" style="border: 1px solid #ccc; padding: 10px;">
+        <div id="preview"></div>
+    </div>
+    <br><br>
+    <div id="objectListContainer">
+        <h2>Objektumok</h2>
+        <div id="objectList"></div>
+    </div>
+    <br><br>
+    <div id="controls">
+        <button onclick="moveSelectedObjects(0, -10)">Fel</button>
+        <button onclick="moveSelectedObjects(0, 10)">Le</button>
+        <button onclick="moveSelectedObjects(-10, 0)">Balra</button>
+        <button onclick="moveSelectedObjects(10, 0)">Jobbra</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
