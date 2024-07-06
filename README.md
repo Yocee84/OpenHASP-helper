@@ -1,3 +1,5 @@
-Download the 3 files to a folder of your choice on your computer. Start index.htm and use the program.
-![image](https://github.com/Yocee84/OpenHASP-helper/assets/25384303/d41743a3-219e-4c9d-84b9-395b8dd33a00)
+Version that can be run online:
+https://konvektune.hu/OHPrev/index.html
+![image](https://github.com/Yocee84/OpenHASP-helper/assets/25384303/32bfc918-6da3-4095-b14e-abc96535f91c)
+
 
